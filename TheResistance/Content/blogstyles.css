@@ -1,0 +1,120 @@
+﻿.bloginput {
+text-align:left;
+width: 80%;
+margin:auto;
+
+}
+
+.blogtitlediv {
+margin: 5% auto;
+}
+
+.blogtextarea {
+margin: 5% auto;
+width: 95%;
+}
+.submitbutton {
+    margin: auto;
+}
+
+#posttitle {
+    width: 75%;
+    margin:auto;
+}
+
+
+
+
+nav ul li {
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    /*Button Links*/
+
+    .blognav{
+        margin: auto 2% auto 47%;
+        width: 80%;
+    }
+    nav ul li {
+        margin: 0 auto 5% auto;
+        
+        }
+
+   
+
+    .button {
+        text-align: center;
+        border: solid .01vmax #000;
+        color: #000;
+        padding: 1%;
+        margin: auto;
+        text-decoration: none;
+        border-radius: 40vmax;
+        height: 2vmax;
+        width: 12vmax;
+        font-size: 1.5vmax;
+        line-height: 2.1vmax;
+    }
+
+
+
+        
+    
+
+        /* Links */
+
+        /* unvisited link */
+
+
+    nav ul li a {
+        
+    }
+
+
+        /* visited link */
+    a.button:visited {
+        color: #08171c;
+    }
+
+    a.button:hover {
+         background-color: #08171c;
+            color: #fff;
+    }
+
+    a.button:active {
+        background-color: #08171c;
+        color: #e1edf0;
+    }
+        
+
+    .bloginput {
+        text-align: left;
+        width: 65%;
+        margin: 0 auto 5% 10%;
+    }
+    
+    #posttitle {
+        width: 75%;
+        margin: auto;
+    }
+
+    .blogtextarea {
+        margin: 5% auto;
+        width: 80%;
+    }
+
+    .submitbutton {
+    }
+
+    
+ 
+
+    } /*End query for 768px*/

@@ -1,0 +1,504 @@
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*Signature Image*/
+
+#firstname {
+ height: 300%;
+ width: 300%;
+
+}
+
+
+
+/* Remove bullets from list items */
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+/* Thumbnail size for image gallery*/
+.thumb {
+ display: inline-block;
+ max-height: 50vmax;
+ max-width: 50max; 
+ margin: auto;  
+}
+
+
+/*List items in Lightbox*/
+
+.imagebox {
+    display: inline-block;
+    
+    margin-bottom: 1.25vmax;
+}
+
+
+
+/* Name Banner IDs*/
+
+
+
+
+
+
+
+#lastname {
+    font-family: 'Nunito Light';
+    font-size: 2vmax;
+    margin: 0 0 auto auto;
+    text-align: right;
+    font-weight: 100;
+    color: #22B7DF;
+    letter-spacing: .05vmax;
+
+}
+
+/* Footer IDs */
+
+#copyright {
+    font-family: "Nunito Light";
+    text-align: center;
+    font-size: 1.8vmax;
+    margin: 6% auto;
+    letter-spacing: .02vmax;
+}
+
+/* Navigation Bar */
+
+nav {
+    
+    font-family: "Nunito Light";
+    font-weight: normal;
+    margin-top: 10%;
+}
+
+nav ul  {
+   
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+  width: 100%; 
+    
+
+}
+
+
+nav ul li a {
+    display: block;
+    margin: 0;
+    font-size: 3vmax;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    letter-spacing: .03vmax;
+}
+
+/* Links */
+
+/* unvisited link */
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* visited link */
+a:visited {
+    color: #022B37;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover, a:focus {
+    background-color: #eee;
+    color: #22B7Df;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: deepskyblue;
+    background-color: #bbb;
+    text-decoration: none;
+}
+
+/* Formatting for Biography Page*/
+
+.bioh2 {
+   font-family: "Nunito Light";
+   color: #249B9B;
+   font-weight: 100;
+   letter-spacing: .03vmax;
+
+}
+
+.biop  {
+ font-family: "Nunito Light";
+ letter-spacing: .02vmax;
+
+
+}
+
+.biocaption {
+
+    font-family: "Nunito";
+    text-align: center;
+    font-size: 2vmax;
+    margin-top: 1.5vmax;
+    margin-bottom: 1vmax;
+    letter-spacing: .03vmax;
+
+}
+
+/*Bio Divs*/
+
+#contentbio {
+
+    width:85%;
+    margin:auto;
+}
+
+#bio {
+    
+    margin: 4vmax auto;
+}
+
+#biophoto {
+
+
+ margin: 4vmax auto 1.5vmax auto;
+
+}
+
+#statement {
+   
+     margin: auto;
+}
+
+/*Photo and Caption on Bio Page*/
+
+#figurebio {
+    margin: auto;
+}
+
+/*End of Bio specific formatting*/
+
+
+/* Divs */
+
+#wrapper {
+    margin: auto;
+    width:100%;
+
+}
+
+/* Name Banner Divs */
+#fname {
+    width: 85%;
+    margin: 8% auto 0 auto;
+    
+}
+
+#lname {
+    width: 80%;
+    margin: -4vmax auto auto auto;  
+
+}
+
+/* End Name Banner Divs */
+
+#navbar {
+  width:85%;
+  margin: 10% auto;
+
+}
+#content1 {
+ width: 85%;
+ margin: 10% auto;
+
+}
+
+#lightbox {
+   margin: auto;
+   text-align: center;
+   
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 240px) {
+
+    #lname {
+    
+    margin: -5.5vmax auto auto auto;  
+
+} 
+#lastname {
+
+    font-size:2.5vmax   ;
+}
+} /*  End Query for 200px to adjust last name div */
+
+
+@media screen and (min-width: 300px) {
+
+    #lname {
+    
+    margin: -7.5vmax auto auto auto;  
+
+} 
+#lastname {
+
+    font-size:2.75vmax   ;
+}
+} /*  End Query for 300px to adjust last name div */
+
+@media screen and (min-width: 340px) {
+
+    #lname {
+    width: 75%;
+    margin: -8.25vmax auto auto auto;  
+
+} 
+#lastname {
+
+    font-size:3.25vmax   ;
+}
+
+} /*  End Query for 340px to adjust last name div */
+
+@media screen and (min-width: 440px) {
+
+    #lname {
+    width: 75%;
+    margin: -10vmax auto auto auto;  
+
+} 
+#lastname {
+
+    font-size:3.5vmax   ;
+}
+
+} /*  End Query for 440px to adjust last name div */
+
+@media screen and (min-width: 540px) {
+
+    #lname {
+    width: 77%;
+    margin: -12vmax auto auto auto;  
+
+} 
+#lastname {
+
+    font-size:4vmax   ;
+}
+
+} /*  End Query for 540px to adjust last name div */
+
+@media screen and (min-width: 600px) {
+
+    #lname {
+        width: 80%;
+        margin: -12.5vmax auto auto auto;
+    }
+
+    #lastname {
+        
+   font-size: 4.25vmax;
+    }
+
+}
+/*End media Query for 650px*/
+
+@media screen and (min-width: 768px) {
+
+/* mouse over link */
+a:hover, a:focus {
+    background-color: #fff;
+}
+
+
+/* Thumbnail size for image gallery*/
+.thumb {
+ display: inline-block;
+ max-height: 11vmax;
+ max-width: 11max; 
+ margin: auto;  
+}
+
+/* Name Banner Divs */
+#fname {
+    width: 35%;
+    margin: 5% 2% 0 62%;
+    
+}
+
+#lname {
+    width: 90%;
+ margin-top: -4.3vmax;   
+
+}
+
+#lastname {
+    
+    font-size: 2vmax;
+    
+}
+
+/* Inline Navbar for browser*/
+
+#navbar {
+  width:80%;
+  margin: auto;
+}
+
+nav ul li {
+    float:left;
+    width: 20%;
+}
+
+
+nav ul li a {
+    display: inline-block;
+    margin: auto;
+    font-size: 1em;
+    text-align: center;
+    padding: 2%;
+    
+}
+
+
+
+
+/*End Navbar Items*/
+
+
+
+
+/*Divs*/
+
+#wrapper {
+    width: 90%;
+
+}
+
+
+#lightbox {
+
+    width:60%;
+}
+
+#content1 {
+    width: 100%;
+    margin: 5% auto;
+}
+
+/* Photo on Index.html page*/
+
+#indexphoto {
+    width:75%;
+    margin:auto;
+    text-align: center;
+
+}
+
+/*Content for Bio Page*/
+
+/*Divs*/
+
+#contentbio {
+
+    width:85%;
+    margin:auto;
+}
+
+
+
+
+ #biophoto {
+    width: 70%;
+    float: right;
+    margin: 4vmax 0 2vmax 2vmax;
+    
+}
+
+
+.biocaption {
+    font-size: 1.5vmax;
+}
+
+
+
+/* Copyright for Browser*/
+
+#copyright {
+  
+  font-size: 1.2vmax;
+  clear: both;
+}
+
+}/*End Media @ 768px*/
+
+ /*Media Query*/
+
+@media screen and (min-width: 1000px) {
+
+
+#lname {
+
+     margin-top: -5.4vmax;
+}
+
+#lastname {
+     font-size: 2vmax;
+   
+}
+
+/*Bio Page*/
+
+#contentbio {
+    width: 68%;
+
+}
+
+
+
+#biophoto {
+
+    width: 60%;
+}
+
+.biocaption {
+    font-size: 1vmax;
+}
+
+
+
+
+}
+/*End Media Query for 1000px*/
+
+
+
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

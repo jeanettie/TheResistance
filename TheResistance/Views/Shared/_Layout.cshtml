@@ -1,42 +1,54 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+
+
+
+    <!--Metatags-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="The Artist website of Jeanette Brown, showcasing various photography &amp mixed media fine art">
+    <meta name="keywords" content="Photography, Fine, Art, Glass, Jeanette, Brown, Portfolio, Artist, Film, Digital, Camera, Sculpture, Mixed, Media">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+
+    <!--Hooomans-->
+    <link type="text/plain" rel="author" href="http://jeanettie.com/humans.txt" />
+
+    <!-- flavicon -->
+    <link rel="shortcut icon" type="image/x-icon" class="fav" href="favicon.ico">
+
+    <title>@ViewBag.Title - Jeanette's Blog</title>
+    @Styles.Render("~/Content/styles.css")
+    @Styles.Render("~/Content/blogstyles.css")
+    @Styles.Render("~/Content/fonts.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
+    <div id="wrapper">
+        <div id="fname">
+            <img id="firstname" src="http://jeanettie.com/imgs/buttons/signature2017.svg" alt="Jeanette">
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <div id="lname">
+            <h2 id="lastname">Brown</h2>
+        </div>
+
+
+        <div id="maincontent">
+            
+
+            @RenderBody()
+
+        </div> <!--end main content div-->
+
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p id="copyright">&copy; @DateTime.Now.Year Jeanette Brown</p>
         </footer>
-    </div>
+    </div><!--end div wrapper-->
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -142,24 +148,73 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707181748464_InitialCreate.cs" />
+    <Compile Include="Migrations\201707181748464_InitialCreate.Designer.cs">
+      <DependentUpon>201707181748464_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707190139280_removelink.cs" />
+    <Compile Include="Migrations\201707190139280_removelink.Designer.cs">
+      <DependentUpon>201707190139280_removelink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\TheResistanceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blogstyles.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Molengo-regular\LICENSE.txt" />
+    <Content Include="fonts\Molengo-regular\Molengo-regular.svg" />
+    <Content Include="fonts\Nunito-300\LICENSE.txt" />
+    <Content Include="fonts\Nunito-300\Nunito-300.svg" />
+    <Content Include="fonts\Nunito-regular\LICENSE.txt" />
+    <Content Include="fonts\Nunito-regular\Nunito-regular.svg" />
+    <Content Include="fonts\Poppins-300\LICENSE.txt" />
+    <Content Include="fonts\Poppins-300\Poppins-300.svg" />
+    <Content Include="fonts\Poppins-regular\LICENSE.txt" />
+    <Content Include="fonts\Poppins-regular\Poppins-regular.svg" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\LICENSE.txt" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\Ubuntu-Condensed-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\Molengo-regular\Molengo-regular.eot" />
+    <Content Include="fonts\Molengo-regular\Molengo-regular.ttf" />
+    <Content Include="fonts\Molengo-regular\Molengo-regular.woff" />
+    <Content Include="fonts\Molengo-regular\Molengo-regular.woff2" />
+    <Content Include="fonts\Nunito-300\Nunito-300.eot" />
+    <Content Include="fonts\Nunito-300\Nunito-300.ttf" />
+    <Content Include="fonts\Nunito-300\Nunito-300.woff" />
+    <Content Include="fonts\Nunito-300\Nunito-300.woff2" />
+    <Content Include="fonts\Nunito-regular\Nunito-regular.eot" />
+    <Content Include="fonts\Nunito-regular\Nunito-regular.ttf" />
+    <Content Include="fonts\Nunito-regular\Nunito-regular.woff" />
+    <Content Include="fonts\Nunito-regular\Nunito-regular.woff2" />
+    <Content Include="fonts\Poppins-300\Poppins-300.eot" />
+    <Content Include="fonts\Poppins-300\Poppins-300.ttf" />
+    <Content Include="fonts\Poppins-300\Poppins-300.woff" />
+    <Content Include="fonts\Poppins-300\Poppins-300.woff2" />
+    <Content Include="fonts\Poppins-regular\Poppins-regular.eot" />
+    <Content Include="fonts\Poppins-regular\Poppins-regular.ttf" />
+    <Content Include="fonts\Poppins-regular\Poppins-regular.woff" />
+    <Content Include="fonts\Poppins-regular\Poppins-regular.woff2" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\Ubuntu-Condensed-regular.eot" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\Ubuntu-Condensed-regular.ttf" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\Ubuntu-Condensed-regular.woff" />
+    <Content Include="fonts\Ubuntu-Condensed-regular\Ubuntu-Condensed-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -185,6 +240,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Posts\Create.cshtml" />
+    <Content Include="Views\Posts\Delete.cshtml" />
+    <Content Include="Views\Posts\Details.cshtml" />
+    <Content Include="Views\Posts\Edit.cshtml" />
+    <Content Include="Views\Posts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -203,6 +263,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707181748464_InitialCreate.resx">
+      <DependentUpon>201707181748464_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707190139280_removelink.resx">
+      <DependentUpon>201707190139280_removelink.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
