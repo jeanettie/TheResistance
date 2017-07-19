@@ -4,45 +4,49 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<div class="blogcreatewrapper">
+
+<h4>New Entry</h4>
 
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>Post</h4>
-        <hr />
+    <div class="Bloginputdiv">
+       
+        
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+        <div class="blogtitlediv">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "posttitle" })
+            <div class="blogtitlediv">
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "posttitleinput" } })
                 @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="blogtextareadiv">
             @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Body, new { htmlAttributes = new { @class = "form-control" } })
+            <div class="blogtextareadiv">
+                @Html.TextAreaFor(model => model.Body,10,40, new { htmlAttributes = new { @class = "posttextarea" } })
                 @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                
             </div>
         </div>
 
         
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+            <div class="submitbuttondiv">
+                <input type="submit" value="Create" class="submitbutton btn btn-default" />
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="bottomnavlinkdiv">
+    @Html.ActionLink("Back to List", "Index", "Posts", new { @class = "buttonsingle" })
+</div>
 </div>
 
 @section Scripts {

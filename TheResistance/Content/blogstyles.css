@@ -1,20 +1,31 @@
-﻿.bloginput {
+﻿.blogcreatewrapper {
 text-align:left;
 width: 80%;
 margin:auto;
 
 }
 
-.blogtitlediv {
-margin: 5% auto;
+.bloginputdiv{
+margin:2% auto;
 }
 
-.blogtextarea {
-margin: 5% auto;
-width: 95%;
+.blogtitlediv {
+margin:2% auto;
+
+}
+
+.blogtextareadiv {
+margin:2% auto;
+
+}
+.submitbuttondiv{
+    margin: 2% auto;
 }
 .submitbutton {
     margin: auto;
+    width: 100%;
+    background-color:gold;
+    border:none;
 }
 
 #posttitle {
@@ -22,13 +33,41 @@ width: 95%;
     margin:auto;
 }
 
+.posttitleinput {
+    
+    width: 100%;
+}
 
+.posttextarea {
+
+height:50vmax;
+width: 100%;
+
+
+}
+
+.bottomnavlinkdiv{
+    margin:2% auto;
+}
 
 
 nav ul li {
 }
 
-
+.buttonsingle {
+    width:100%;
+    text-align: center;
+    border: solid .01vmax #000;
+    color: #000;
+    padding: 1%;
+    margin: auto;
+    text-decoration: none;
+    
+    height: 2vmax;
+    
+    font-size: 1.5vmax;
+    line-height: 2.1vmax;
+}
 
 
 
@@ -48,7 +87,19 @@ nav ul li {
         
         }
 
-   
+    .buttonsingle {
+        text-align: center;
+        border: solid .01vmax #000;
+        color: #000;
+        padding: 1%;
+        margin: auto;
+        text-decoration: none;
+        border-radius: 40vmax;
+        height: 2vmax;
+        width: 12vmax;
+        font-size: 1.5vmax;
+        line-height: 2.1vmax;
+    }
 
     .button {
         text-align: center;
@@ -101,7 +152,7 @@ nav ul li {
         margin: 0 auto 5% 10%;
     }
     
-    #posttitle {
+    .posttitle {
         width: 75%;
         margin: auto;
     }
