@@ -19,16 +19,16 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="blogtitlediv">
             @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "posttitle" })
-            <div class="blogtitlediv">
+            <div class="blogtitleinputdiv">
                 @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "posttitleinput" } })
                 @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="blogtextareadiv">
-            @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="blogtextareadiv">
-                @Html.TextAreaFor(model => model.Body,10,40, new { htmlAttributes = new { @class = "posttextarea" } })
+            
+            <div class="blogtextareainputdiv">
+                @Html.TextAreaFor(model => model.Body,12,45, new { htmlAttributes = new { @class = "posttextarea" } })
                 @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
                 
             </div>
@@ -36,7 +36,7 @@
 
         
 
-        <div class="form-group">
+        <div class="">
             <div class="submitbuttondiv">
                 <input type="submit" value="Create" class="submitbutton btn btn-default" />
             </div>
@@ -45,7 +45,7 @@
 }
 
 <div class="bottomnavlinkdiv">
-    @Html.ActionLink("Back to List", "Index", "Posts", new { @class = "buttonsingle" })
+    @Html.ActionLink("Back to List", "Index", "Posts", new { @class = "" })
 </div>
 </div>
 

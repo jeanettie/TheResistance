@@ -4,43 +4,43 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Post</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+<div class="blogcreatewrapper">
+<div class="detailslistdiv">
+  
+        <dl class="dl-horizontal">
+            <dt class="listitemtitle">
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Body)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Body)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Body)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Body)
+            </dd>
 
-       
 
-        
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
 
-    </dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateCreated)
+            </dd>
+
+        </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+    </div>

@@ -1,4 +1,11 @@
-﻿.blogcreatewrapper {
+﻿h4{
+    font-family: "Poppins";
+    height: 5vmax;
+    margin: 10% auto 7% auto;
+}
+
+
+.blogcreatewrapper {
 text-align:left;
 width: 80%;
 margin:auto;
@@ -7,11 +14,13 @@ margin:auto;
 
 .bloginputdiv{
 margin:2% auto;
+width:100%;
 }
 
 .blogtitlediv {
 margin:2% auto;
-
+width:100%;
+font-family: "Nunito Light";
 }
 
 .blogtextareadiv {
@@ -19,6 +28,7 @@ margin:2% auto;
 
 }
 .submitbuttondiv{
+    width:100%;
     margin: 2% auto;
 }
 .submitbutton {
@@ -26,11 +36,13 @@ margin:2% auto;
     width: 100%;
     background-color:gold;
     border:none;
+    font-family: "Nunito Light";
 }
 
 #posttitle {
     width: 75%;
     margin:auto;
+    font-family:"Nunito Light";
 }
 
 .posttitleinput {
@@ -38,10 +50,15 @@ margin:2% auto;
     width: 100%;
 }
 
+textarea{
+    height:auto;
+    width:100%;
+}
+
 .posttextarea {
 
-height:50vmax;
-width: 100%;
+height: auto;
+width: auto;
 
 
 }
@@ -70,9 +87,61 @@ nav ul li {
 }
 
 
+/*Index Page*/
+/*Index Table*/
 
+th {
+    border-bottom: 1px solid #ddd;
+    font-family:"Poppins";
+}
 
+td {
+   font-family: "Nunito Light";
+   padding:.5%;
 
+}
+
+th, td {
+   
+}
+
+tr:hover {
+    background-color: #f5f5f5
+}
+/*End Index Table Styles*/
+.divfortable{
+    margin: 8% auto 2% auto;
+}
+.divforactionlinkindex {
+    text-align: center;
+    margin: 5% auto 3% auto;
+
+}
+.createnewlink {
+    width: 100%;
+    margin: auto;
+    font-family: "Nunito Light";
+
+}
+
+/*Details Page*/
+dt{
+    font-family:"Poppins";
+}
+
+dd{
+    margin: 2% auto 2% auto;
+    font-family: "Nunito Light";
+}
+
+.titleforlistitem{
+    font-size: 2vmax;
+}
+
+.detailslistdiv{
+    margin: 7% auto 5% auto;
+
+}
 
 @media screen and (min-width: 768px) {
 
