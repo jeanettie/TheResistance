@@ -64,6 +64,7 @@ textarea{
     max-height:100%;
     max-width:100%;
     resize: none;
+    width:100%;
 }
 
 .posttextarea {
@@ -98,6 +99,14 @@ nav ul li {
 /*Index Page*/
 /*Index Table*/
 
+td.verticalalign{
+    vertical-align: top;
+}
+
+th.maxwidth, td.maxwidth {
+    max-width: 30%;
+}
+
 th {
     border-bottom: 1px solid #ddd;
     font-family:"Poppins";
@@ -106,7 +115,7 @@ th {
 
 td {
    font-family: "Nunito Light";
-   padding:.5%;
+   padding:1.5%;
 
 }
 
@@ -167,10 +176,10 @@ dd{
 
     .buttonsingle {
         text-align: center;
-        border: solid .01vmax #000;
+        border: none;
         color: #000;
-        padding: 1%;
-        margin: auto;
+        
+        margin: auto auto auto 0;
         text-decoration: none;
         border-radius: 40vmax;
         height: 2vmax;
@@ -235,15 +244,35 @@ dd{
         margin: auto;
     }
 
+    .posttitleinput{
+        width: 40%;
+    }
+
     .blogtextarea {
         margin: 5% auto;
-        width: 80%;
+        width: 100%;
     }
 
     .submitbutton {
+        margin: auto auto auto 0;
+       float: right;
+        border: solid .01vmax #000;
+        width: 100%;
+        display: block;
+        background-color: white;
+        font-family: "Poppins";
+        border-radius: 40vmax;
+        height: 2.5vmax;
+        width: 12vmax;
+        font-size: 1.5vmax;
+        line-height: 2.1vmax;
     }
 
     
- 
+    
+    .createnewlink{
+        margin:2% auto 2% 0;
+        width: 20%;
+    }
 
     } /*End query for 768px*/

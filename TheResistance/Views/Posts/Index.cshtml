@@ -12,7 +12,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
-                <th>
+                <th class="maxwidth">
                     @Html.DisplayNameFor(model => model.Body)
                 </th>
 
@@ -25,10 +25,10 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>
+                    <td class="verticalalign">
                         @Html.DisplayFor(modelItem => item.Title)
                     </td>
-                    <td>
+                    <td class="verticalalign maxwidth">
                         @Html.DisplayFor(modelItem => item.Body)
                     </td>
 
@@ -37,9 +37,9 @@
                     </td>
 
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID })<br />
+                        @Html.ActionLink("Details", "Details", new { id = item.ID })<br />
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })<br />
                     </td>
 
                 </tr>
