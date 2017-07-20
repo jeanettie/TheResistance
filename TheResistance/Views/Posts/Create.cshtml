@@ -6,7 +6,7 @@
 
 <div class="blogcreatewrapper">
 
-<h4>New Entry</h4>
+
 
 
 @using (Html.BeginForm()) 
@@ -28,7 +28,7 @@
         <div class="blogtextareadiv">
             
             <div class="blogtextareainputdiv">
-                @Html.TextAreaFor(model => model.Body,12,45, new { htmlAttributes = new { @class = "posttextarea" } })
+                @Html.TextAreaFor(model => model.Body,12,50, new { htmlAttributes = new { @class = "posttextarea" } })
                 @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
                 
             </div>
@@ -36,16 +36,16 @@
 
         
 
-        <div class="">
-            <div class="submitbuttondiv">
+        <div class="submitbuttondiv">
+            <div class="">
                 <input type="submit" value="Create" class="submitbutton btn btn-default" />
             </div>
         </div>
     </div>
 }
 
-<div class="bottomnavlinkdiv">
-    @Html.ActionLink("Back to List", "Index", "Posts", new { @class = "" })
+<div class="divforactionlinkindex">
+    @Html.ActionLink("Back to List", "Index", "Posts", new { @class = "buttonsingle" })
 </div>
 </div>
 

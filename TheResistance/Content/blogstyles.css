@@ -16,7 +16,7 @@
 .blogcreatewrapper {
 text-align:left;
 width: 80%;
-margin:auto;
+margin: 8% auto 2% auto ;
 
 }
 
@@ -37,14 +37,16 @@ margin:2% auto;
 }
 .submitbuttondiv{
     width:100%;
-    margin: 2% auto;
+    margin: 2% 0 2% 0;
 }
 .submitbutton {
     margin: auto;
     width: 100%;
+    display: block;
     background-color:gold;
     border:none;
-    font-family: "Nunito Light";
+    font-family: "Poppins";
+    height:5.25vmax;
 }
 
 #posttitle {
@@ -59,8 +61,9 @@ margin:2% auto;
 }
 
 textarea{
-    height:auto;
-    width:100%;
+    max-height:100%;
+    max-width:100%;
+    resize: none;
 }
 
 .posttextarea {
@@ -80,18 +83,15 @@ nav ul li {
 }
 
 .buttonsingle {
-    width:100%;
+    max-width: 100%;
     text-align: center;
-    border: solid .01vmax #000;
+    border: solid .01vmax rgba(2,8,72,.90);
     color: #000;
     padding: 1%;
-    margin: auto;
+    margin: 2% 0 2% 0;
     text-decoration: none;
-    
-    height: 2vmax;
-    
-    font-size: 1.5vmax;
-    line-height: 2.1vmax;
+    display:block;
+    font-family:"Nunito Light";
 }
 
 
@@ -124,7 +124,7 @@ tr:hover {
 .divforactionlinkindex {
     text-align: center;
     margin: 5% auto 3% auto;
-
+    
 }
 .createnewlink {
     width: 100%;
