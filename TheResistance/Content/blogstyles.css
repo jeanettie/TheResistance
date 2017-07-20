@@ -4,6 +4,14 @@
     margin: 10% auto 7% auto;
 }
 
+.italic{
+    font-style:italic;
+}
+
+.inline{
+    display: inline-block;
+}
+
 
 .blogcreatewrapper {
 text-align:left;
@@ -93,6 +101,7 @@ nav ul li {
 th {
     border-bottom: 1px solid #ddd;
     font-family:"Poppins";
+    text-align: center;
 }
 
 td {
