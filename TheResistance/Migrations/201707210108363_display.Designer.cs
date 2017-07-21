@@ -7,13 +7,13 @@ namespace TheResistance.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class removelink : IMigrationMetadata
+    public sealed partial class display : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(removelink));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(display));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707190139280_removelink"; }
+            get { return "201707210108363_display"; }
         }
         
         string IMigrationMetadata.Source
