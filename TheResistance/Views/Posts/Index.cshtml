@@ -12,7 +12,8 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
-                <th class="maxwidth">
+                
+                <th class="maxwidth hiddensmall">
                     @Html.DisplayNameFor(model => model.Body)
                 </th>
 
@@ -28,7 +29,7 @@
                     <td class="verticalalign">
                         @Html.DisplayFor(modelItem => item.Title)
                     </td>
-                    <td class="verticalalign maxwidth">
+                    <td class="verticalalign maxwidth hiddensmall">
                         @Html.DisplayFor(modelItem => item.Body)
                     </td>
 
@@ -50,7 +51,7 @@
 
     <div class="divforactionlinkindex">
         <p class="createnewlink">
-            @Html.ActionLink("Create New", "Create","", new { @class = "buttonsingle" })
+            @Html.ActionLink("Create New", "Create","", new { @class = "buttonsingle enlargecreatenew" })
         </p>
     </div>
 
