@@ -156,13 +156,13 @@
     <Compile Include="Migrations\201707181748464_InitialCreate.Designer.cs">
       <DependentUpon>201707181748464_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707210101023_addeddisplayname.cs" />
-    <Compile Include="Migrations\201707210101023_addeddisplayname.Designer.cs">
-      <DependentUpon>201707210101023_addeddisplayname.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201707210108363_display.cs" />
     <Compile Include="Migrations\201707210108363_display.Designer.cs">
       <DependentUpon>201707210108363_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707210120063_changeddisplayname.cs" />
+    <Compile Include="Migrations\201707210120063_changeddisplayname.Designer.cs">
+      <DependentUpon>201707210120063_changeddisplayname.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Post.cs" />
@@ -272,11 +272,11 @@
     <EmbeddedResource Include="Migrations\201707181748464_InitialCreate.resx">
       <DependentUpon>201707181748464_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707210101023_addeddisplayname.resx">
-      <DependentUpon>201707210101023_addeddisplayname.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707210108363_display.resx">
       <DependentUpon>201707210108363_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707210120063_changeddisplayname.resx">
+      <DependentUpon>201707210120063_changeddisplayname.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

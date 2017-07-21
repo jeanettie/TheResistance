@@ -21,7 +21,7 @@ namespace TheResistance.Models
         public string Title { get; set; }
         [Required(ErrorMessage ="Some Text is Required to Post")]
         public string Body { get; set; }
-        [DisplayName("Date/Time")]
+        [DisplayName("Date Created")]
         public DateTime DateCreated { get; private set; }
 
        // public virtual File Files { get; set; }
